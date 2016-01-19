@@ -1,6 +1,6 @@
 tumblr = require "tumblrbot"
 SOURCES = {
-  "interactivegif.tumblr.com"
+  "perfumegif.tumblr.com"
 }
 
 getGif = (blog, msg) ->
@@ -8,6 +8,6 @@ getGif = (blog, msg) ->
     msg.send post.photos[0].original_size.url
 
 module.exports = (robot) ->
-  robot.respond /interactive/i, (msg) ->
+  robot.respond /perfume/i, (msg) ->
     blog = msg.random Object.keys(SOURCES)
     getGif blog, msg
