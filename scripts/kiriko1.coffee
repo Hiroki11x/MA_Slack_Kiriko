@@ -17,3 +17,6 @@ module.exports = (robot) ->
 
   robot.hear /(iPhone)/i, (msg) ->
     msg.send msg.random ["iPhoneとか使ってるんですか？","Androidにしましょう！","解約したほうがいいです"]
+
+  robot.hear /(きりこ面白い|きりこウケる)/i, (msg) ->
+    msg.send msg.random ["私そんなに面白いですかね😊","よく言われます🌝"]
