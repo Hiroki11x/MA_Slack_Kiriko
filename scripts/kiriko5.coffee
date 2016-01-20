@@ -11,4 +11,10 @@ module.exports = (robot) ->
 
   robot.hear /(遅刻|遅延|遅れます|遅くなります)/i, (msg) ->
     msg.send msg.random ["遅刻は絶対にきりこが許しません💢","遅刻はダメですよ！ダッシュです🏃", "みんなで遅刻していこ〜〜"]
+
+  robot.hear /(自己紹介)/i, (msg) ->
+    msg.send "まだやってない人はお願いしますね！"
+
+  robot.hear /(関西メンター|生まれは大阪|西のメンター)/i, (msg) ->
+    msg.send msg.random ["関西は大層面白いんでしょうね😏","私も生まれは京都なんですよ〜！"]
   
