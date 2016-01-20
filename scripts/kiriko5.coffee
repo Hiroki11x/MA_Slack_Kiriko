@@ -14,4 +14,7 @@ module.exports = (robot) ->
 
   robot.hear /(関西メンター|生まれは大阪|西のメンター)/i, (msg) ->
     msg.send msg.random ["関西は大層面白いんでしょうね😏","私も生まれは京都なんですよ〜！"]
+
+  robot.hear /(ありがとう|サンキュー|さんきゅー|感謝です|ありがてえ|助かる|たすかる)/i, (msg) ->
+    msg.send msg.random ["きりこも嬉しいです！","感謝感謝🙇", "圧倒的感謝🙇"]
   
