@@ -9,7 +9,5 @@ module.exports = (robot) ->
  robot.hear /(普通は|平凡な)/i, (msg) ->
     msg.send msg.random ["ただの人間には興味ありません！👽","枠にはまっちゃダメですよ🙅"]
 
- robot.hear /(教えて下さい|わからないです)/i, (msg) ->
+ robot.hear /(教えて下さい|わからないです|教えて欲しい|わかりません|分かりません|分からないです)/i, (msg) ->
     msg.send msg.random ["Googleって知ってますか？？","ggrks","メンターなら、まずは調べますよね？☺️","私は知っていますよ！"]
-
- 教えて下さい
