@@ -12,5 +12,8 @@ module.exports = (robot) ->
  robot.respond /(.*)、ちょっとひどいよね/i, (msg) ->
   msg.send "#{msg.match[1]}はさすがにひどいです！"
 
+ robot.respond /(自己紹介)/i, (msg) ->
+  msg.send "まだやってない人はお願いしますね！"
+
  robot.respond /(slackの使い方紹介)/i, (msg) ->
   msg.send "1. まずProfileの設定を行ってください(写真、名前など)\n2. #self-introductionで自己紹介をお願いします\n3. #infomation, #question, #bug_collectionには必ず参加してください(それ以外にも必要そうなチャンネルは参加しよう！)\n4. 使い方など分からなければ#zatsudanで聞いてください！"
