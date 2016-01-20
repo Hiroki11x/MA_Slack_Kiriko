@@ -8,3 +8,7 @@ module.exports = (robot) ->
 
   robot.hear /(ぱみゅぱみゅ|きゃりー)/i, (msg) ->
     msg.send msg.random ["呼びましたか？","誰かが私のことを噂していますね", "ぱみゅぱみゅ"]
+
+  robot.hear /(ぱみゅぱみゅ|きゃりー)/i, (msg) ->
+    msg.send "てふーぱみゅぱみゅじゃん"
+  
