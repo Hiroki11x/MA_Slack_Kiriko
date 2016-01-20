@@ -17,5 +17,8 @@ module.exports = (robot) ->
 |雑！|雑だな|雑ですね)/i, (msg) ->
     msg.send msg.random ["雑なのは心の乱れ","ダメですかね？？"]
 
+ robot.hear /(死んだ|動かない)/i, (msg) ->
+    msg.send msg.random ["私よく動かなくなるんです😅","まだ死んでませんよ！！"]
+
  robot.hear /(教えて下さい|わからないです|教えて欲しい|教えろよ|教えてkiriko|わかりません|分かりません|分からないです)/i, (msg) ->
     msg.send msg.random ["Googleって知ってますか？？","ggrks","メンターなら、まずは調べますよね？☺️","私は知っていますよ！"]
