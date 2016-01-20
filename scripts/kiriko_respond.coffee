@@ -2,3 +2,12 @@ module.exports = (robot) ->
 
  robot.respond /(ひどい|きつい|失礼)/i, (msg) ->
   msg.send msg.random ["すいません🙇","ごめんぴょん🐇", "そうですか〜？"]
+
+ robot.respond /(ウケる|面白い|いいね)/i, (msg) ->
+  msg.send msg.random ["照れます😊","ふふふふふ😚", "いえ〜い😉"]
+
+ robot.respond /(slackの使い方紹介)/i, (msg) ->
+  msg.send "1. まずProfileの設定を行ってください(写真、名前など)
+2. #self-introductionで自己紹介をお願いします
+3. #infomation, #question, #bug_collectionには必ず参加してください(それ以外にも必要そうなチャンネルは参加しよう！)
+4. 使い方など分からなければ#zatsudanで聞いてください！"

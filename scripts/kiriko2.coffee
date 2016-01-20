@@ -13,5 +13,5 @@ module.exports = (robot) ->
     msg.send msg.random ["五期は優秀だと聞きました！！期待しています！！","五期は優秀ですよね😇", "私も五期なんです🙆"]
 
   robot.hear /(６期|6期)/i, (msg) ->
-    msg.send msg.random ["六期は、変な人多いですよね！","六期なので私の後輩ですね😤"]
+    msg.send msg.random ["六期は、みんな面白いですよね！","六期なので私の後輩ですね😤"]
   
