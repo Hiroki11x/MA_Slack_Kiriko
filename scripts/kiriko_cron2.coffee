@@ -1,4 +1,4 @@
-cron = require('cron').CronJob
+cron = require('cron').CronJob2
 module.exports = (robot) ->
   robot.enter ->
   new cron
