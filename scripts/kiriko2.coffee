@@ -7,5 +7,11 @@ module.exports = (robot) ->
     msg.send msg.random ["てふーぱみゅぱみゅじゃん","また炎上ですか？", "燃えてますね〜〜🔥"]
 
   robot.hear /(IAMAS|岐阜)/i, (msg) ->
-    msg.send msg.random ["岐阜って空気がおいしそうですね","岐阜の暮らしはどうですか？？🌳", "田舎の暮らし憧れます！"]
+    msg.send msg.random ["ぎふって空気がおいしそうですね","田舎の暮らしはどうですか？？🌳", "田舎の暮らし憧れます！"]
+
+  robot.hear /(５期|5期)/i, (msg) ->
+    msg.send msg.random ["五期は優秀だと聞きました！！期待しています！！","五期は優秀ですよね😇", "私も五期なんです🙆"]
+
+  robot.hear /(６期|6期)/i, (msg) ->
+    msg.send msg.random ["六期は、変な人多いですよね！","六期なので私の後輩ですね😤"]
   

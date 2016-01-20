@@ -10,7 +10,10 @@ module.exports = (robot) ->
     msg.send msg.random ["進捗だすです！","進捗〆切進捗〆切進捗〆切進捗〆切","進捗どうですか？", "進捗むしろどうなんですかね？"]
 
   robot.hear /(ウケる|うける)/i, (msg) ->
-    msg.send msg.random ["さすがにうけますね！！！","うけねえよ💢","お前もなかなかウケるよwwww"]
+    msg.send msg.random ["さすがにうけますね！！！","うけねえよ💢","お前もなかなかウケるよwww","なんかうけますねwww"]
+
+  robot.hear /(焼き鳥|鳥刺し|もも肉|串焼き)/i, (msg) ->
+    msg.send msg.random ["🐔食べたいですね🐔","🐔のオススメのお店知ってます！","🐔🐣🐧🐥全部おいしそうですね😍"]
 
   robot.hear /(iPhone)/i, (msg) ->
     msg.send msg.random ["iPhoneとか使ってるんですか？","Androidにしましょう！","解約したほうがいいです"]
