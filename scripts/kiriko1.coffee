@@ -5,10 +5,3 @@ module.exports = (robot) ->
 
   robot.hear /(進捗|しんちょく)/i, (msg) ->
     msg.send msg.random ["進捗だすです！","進捗〆切進捗〆切進捗〆切進捗〆切","進捗どうですか？", "進捗むしろどうなんですかね？"]
-
-  robot.hear /(ぱみゅぱみゅ|きゃりー)/i, (msg) ->
-    msg.send msg.random ["呼びましたか？","誰かが私のことを噂していますね", "ぱみゅぱみゅ"]
-
-  robot.hear /(ぱみゅぱみゅ|きゃりー)/i, (msg) ->
-    msg.send "てふーぱみゅぱみゅじゃん"
-  
