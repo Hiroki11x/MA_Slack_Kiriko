@@ -8,3 +8,6 @@ module.exports = (robot) ->
 
   robot.hear /おやすみなさい/i, (msg) ->
     msg.send "寝ちゃうのか(´・ω・`)"
+
+  robot.hear /おはよう/i, (msg) ->
+    msg.send msg.random ["おはようございます！","おはよう〜🌞"]
